@@ -1,24 +1,25 @@
-// clase-08-ejemplo-p5js-texto
+// clase-08-ejemplo-p5js-camara
 // codigo adaptado desde ejemplo base de p5-serialcontrol
 // por montoyamoraga
 // v0.0.1 mayo 2022
 // hecho con p5.js y p5.serialport.js
 // basado en ejemplo https://github.com/p5-serial/p5.serialport/tree/master/examples/basics
 
-// declarar variable para camara
-let camara;
-
 // declarar variable para puerto serial
 let serial;
-
-// declarar variable para datos recibidos
-let datosRecibidos = "esperando...";
-
-let datosSeparados = [0, 0];
 
 // declarar variable con nombre de puerto de Arduino
 // actualizar con nombre del puerto en tu computador
 let nombrePuerto = "/dev/tty.usbmodem143301";
+
+// declarar variable para datos recibidos
+let datosRecibidos = "esperando...";
+
+// declarar variable para datos recibidos, separados en un arreglo
+let datosSeparados = [0, 0];
+
+// declarar variable para camara
+let camara;
 
 // setup() ocurre una vez al principio
 function setup() {
